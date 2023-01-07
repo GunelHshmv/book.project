@@ -1,0 +1,19 @@
+/* .head{
+    width: 99%;
+    height: 4vh;
+    padding: 18px 0 18px 18px;
+border-radius: 8px;
+border: 1px solid black;
+}
+.head a{
+    font-size: 14px;
+    text-decoration: none; 
+   margin-left: 12px; 
+}
+.btnColor{
+    color: green;
+} */
+a{
+    text-decoration: none;
+    margin-left: 8px;
+}

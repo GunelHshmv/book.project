@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="leftmain">
+        <div class="cont">
+                    <div class="leftside">
+            <div class="headpart">
+                <h3>Book Boolean</h3>
+                <p>You can't be a good <span style="color: #52B788;"><b>Backend</b></span> , but you can be good <span style="color: #52B788;"><b>Bookend</b></span></p>
+            </div>
+            <div class="forms">
+                <form  #form="ngForm" >
+                    <div class="formClass">
+                    <div>
+                    <label><b>Book Name</b></label>
+                    <input type="text"
+                     placeholder="Enter your book name" 
+                     name="booksname" 
+                     ngModel
+                     required 
+                     #booksname="ngModel"  >
+                   </div>
+                   <div class="div" *ngIf="!booksname.valid && submit ">sehv</div>
+                   <div>
+                    <label><b>Author</b></label>
+                    <input type="text" placeholder="Enter your book author" name="author" ngModel required #author="ngModel">
+                   </div>
+                   <div class="div" *ngIf="!author.valid && submit ">sehvdir</div>
+                     
+                   <div>
+                    <label><b>Page Count</b></label>
+                    <input type="text" placeholder="Enter page count" name="pageCount" ngModel required #pageCount="ngModel" min="80"  >
+                   </div>
+                 
+                   <div>
+                    <label><b>Price</b></label>
+                    <input type="text" placeholder="Enter Price" name="price" ngModel required #price="ngModel" min="5" max="50"  >
+                   </div>
+
+
+                   <div>
+                    <label><b>Title</b></label>
+                    <input type="text" placeholder="Enter title" name="title" ngModel required #title="ngModel" >
+                   </div>
+                   <div  >
+                   <button   [disabled]="check()"  [ngStyle]="{'background-color': bklist.length>3?'red':'#52b788'}" type="submit"  class="btn" (click)="addNewBook(form)">Order</button>
+                   </div>
+                </div>
+                </form>              
+            </div>
+        </div>
+        <div class="greenLine"></div>
+        </div>
+    
+    
+   
+    </main>
+    </body></html>
