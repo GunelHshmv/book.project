@@ -21,13 +21,6 @@ price!:any;
 title!:string;
 submit:boolean=false
 
- 
-
-// @ViewChild("form") fr!: NgForm;
-
-
-//bunu niye yazmisan?
-//Gunel men bu taspiriqi vermisemki [(NgModel)] istifade etmiyek sen yene onu etmisen  burda data value
 check(){
   if(this.bklist.length>=6){
  return true
@@ -49,9 +42,6 @@ check(){
     }
   
   }
-
-
-
   ngOnInit(): void {
 
      }
