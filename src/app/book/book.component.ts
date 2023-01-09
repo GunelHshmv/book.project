@@ -27,9 +27,6 @@ bookList:Array<bookLibrary>=[{
   tittlem:"iynn"
 }]
 addBook(data:bookLibrary){
-
     this.bookList.push(data)
   }
- 
-
 }
